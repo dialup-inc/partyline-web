@@ -1,0 +1,70 @@
+{
+  "name": "party-line-web",
+  "private": true,
+  "version": "0.0.1",
+  "description": "Web frontend for the PartyLine project",
+  "main": "src/index.tsx",
+  "scripts": {
+    "build": "webpack -p --mode production --devtool sourcemap",
+    "start": "webpack-dev-server -d --port 3030",
+    "libphonenumber-metadata": "libphonenumber-generate-metadata src/ui/phonenumber.metadata.json --countries US --extended",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dialup-inc/party-line-web.git"
+  },
+  "author": "Max Goodhart <mbg@dialup.com>",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/dialup-inc/party-line-web/issues"
+  },
+  "homepage": "https://github.com/dialup-inc/party-line-web#readme",
+  "dependencies": {
+    "@chakra-ui/core": "^1.0.0-rc.5",
+    "@chakra-ui/icon": "^1.0.0-rc.5",
+    "@chakra-ui/system": "^1.0.0-rc.5",
+    "@chakra-ui/theme-tools": "^1.0.0-rc.5",
+    "@sentry/browser": "^5.24.2",
+    "@sentry/tracing": "^5.24.2",
+    "@xstate/react": "^1.0.0-rc.6",
+    "clipboard-copy": "^3.1.0",
+    "email-validator": "^2.0.4",
+    "fetch-retry": "^4.0.1",
+    "firebase": "^7.21.1",
+    "formik": "^2.1.7",
+    "libphonenumber-js": "^1.8.1",
+    "lodash": "^4.17.20",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-phone-number-input": "^3.1.0",
+    "simple-peer": "^9.7.2",
+    "standardized-audio-context": "^25.1.3",
+    "webrtc-adapter": "^7.7.0",
+    "xstate": "^4.13.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.11.6",
+    "@storybook/addon-actions": "^6.0.22",
+    "@storybook/addon-essentials": "^6.0.22",
+    "@storybook/addon-links": "^6.0.22",
+    "@storybook/react": "^6.0.22",
+    "@svgr/webpack": "^5.4.0",
+    "@types/react": "^16.9.49",
+    "@types/react-dom": "^16.9.8",
+    "@types/react-phone-number-input": "^3.0.5",
+    "@types/simple-peer": "^9.6.0",
+    "babel-loader": "^8.1.0",
+    "file-loader": "^6.1.1",
+    "html-webpack-plugin": "^4.5.0",
+    "prettier": "^2.1.2",
+    "react-is": "^16.13.1",
+    "ts-loader": "^8.0.4",
+    "typescript": "^4.0.3",
+    "webpack": "^4.44.2",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  }
+}
